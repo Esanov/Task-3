@@ -29,11 +29,11 @@ public class ShapeFactory {
                 this.shape = ShapeFactory.createStar(5, new Point(0, 0), (double)this.width / 2.0, (double)this.width / 4.0);
                 break;
             }
-            case 5: {
+            case 7: {
                 this.shape = new Rectangle2D.Double((double)(- this.width) / 2.0, (double)(- this.height) / 2.0, this.width, this.height);
                 break;
             }
-            case 7: {
+            case 5: {
                 GeneralPath path = new GeneralPath();
                 double tmp_height = Math.sqrt(2.0) / 2.0 * (double)this.height;
                 path.moveTo((double)((- this.width) / 2), - tmp_height);
@@ -63,11 +63,11 @@ public class ShapeFactory {
                 this.stroke = new BasicStroke(7.0f);
                 break;
             }
-            case 7: {
+            case 8: {
                 this.paint = new GradientPaint(- this.width, - this.height, Color.white, this.width, this.height, Color.gray, true);
                 break;
             }
-            case 8: {
+            case 7: {
                 this.paint = Color.red;
                 break;
             }
